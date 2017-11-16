@@ -10,6 +10,14 @@ int main()
   {
     i=i*i;
   }
+  for (int c=0; c<10;c++)
+  {
+    i++;
+  }
+  while (i<100)
+  {
+    i++;
+  }
 
   keypad();
   return 0;
