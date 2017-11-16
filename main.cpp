@@ -1,7 +1,15 @@
 #include <iostream>
 
-int keypad() {
+int keypad();
 
+int main() 
+{
+  keypad();
+  return 0;
+}
+
+int keypad() 
+{
   int integer;
   char dimension;
 
@@ -10,13 +18,4 @@ int keypad() {
   std::cin >> integer;
   std::cout << integer << std::endl;
   return integer;
-
-};
-
-int main() {
-
-  keypad();
-
-  return 0;
-
 }
