@@ -8,7 +8,7 @@ all: main.out keypad.o test.out
 main.out: main.cpp keypad.o
 	g++ $(CXXFLAGS) main.cpp keypad.o -o main.out
 
-heypad.o: keypad.cpp keypad.h
+keypad.o: keypad.cpp keypad.h
 	g++ -c $(CXXFLAGS) keypad.cpp -o keypad.o
 
 test.out: test.cpp keypad.o
