@@ -4,6 +4,13 @@ int keypad();
 
 int main() 
 {
+  //Stupid loopid:
+  int i=1;
+  if (i==1)
+  {
+    i=i*i;
+  }
+
   keypad();
   return 0;
 }
