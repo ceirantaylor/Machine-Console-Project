@@ -19,17 +19,19 @@ void LED()
   bool blink;
 
   blink = true;
-  wiringPisetup();
+  int wiringPisetup(void);
   pinMode(0,OUTPUT);
-  std::cout << "Enter true" << std::endl;
-  std::cin >> blink; 
   digitalWrite(0,HIGH);
-
-  if(blink == false)
+  while (blink==true)
   {
-    digitalWrite(0,LOW);
-    delay(2000);
-    digitalWrite(0,HIGH);
-    blink = true;
+    std::cout << "Input true for blink or any other key to quit" << std::endl;
+    std::cin >> blink; 
+    
+    if(blink == true)
+    {
+      digitalWrite(0,LOW);
+      delay(2000);
+      digitalWrite(0,HIGH);
+    }
   }
 }

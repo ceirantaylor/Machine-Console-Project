@@ -1,5 +1,6 @@
 #include <iostream>
 #include "keypad.h"
+#include "wiringPi.h"
 
 int main() 
 {
