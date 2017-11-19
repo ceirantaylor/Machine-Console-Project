@@ -16,18 +16,16 @@ int keypad()
 
 void LED()
 {
-  bool blink;
-
-  blink = true;
+  int blink = 1;
   int wiringPisetup(void);
   pinMode(0,OUTPUT);
   digitalWrite(0,HIGH);
-  while (blink==true)
+  while (blink==1)
   {
-    std::cout << "Input true for blink or any other key to quit" << std::endl;
+    std::cout << "Input 1 for blink or any other key to quit" << std::endl;
     std::cin >> blink; 
     
-    if(blink == true)
+    if(blink == 1)
     {
       digitalWrite(0,LOW);
       delay(2000);
