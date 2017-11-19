@@ -2,5 +2,6 @@
 #define KEYPAD_H
 
 int keypad();
+void LED();
 
 #endif
