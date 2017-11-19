@@ -17,19 +17,20 @@ int keypad()
 void LED()
 {
   int blink = 1;
-  int wiringPisetup(void);
+  wiringPiSetup();
   pinMode(0,OUTPUT);
   digitalWrite(0,HIGH);
-  while (blink==1)
+  while(blink==1)
   {
     std::cout << "Input 1 for blink or any other key to quit" << std::endl;
     std::cin >> blink; 
     
-    if(blink == 1)
+    if(blink==1)
     {
       digitalWrite(0,LOW);
       delay(2000);
       digitalWrite(0,HIGH);
     }
   }
+  digitalWrite(0,LOW);
 }
