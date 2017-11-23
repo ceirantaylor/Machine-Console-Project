@@ -2,6 +2,7 @@
 #include <iostream>
 #include "wiringPi.h"
 
+/*
 int keypad() 
 {
   int integer;
@@ -34,3 +35,5 @@ void LED()
   }
   digitalWrite(0,LOW);
 }
+*/
+//Commented out so can experiment with running while not developing on a RaspPi

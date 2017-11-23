@@ -4,6 +4,7 @@
 
 int main() 
 {
-  LED();
-  return 0;
+    //LED();
+    //Commented out to experiment with building without RaspPi
+    return 0;
 }
