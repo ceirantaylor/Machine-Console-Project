@@ -3,5 +3,7 @@
 
 int keypad();
 void LED();
+int getKeypadInput();
+void outputValue(int input);
 
 #endif

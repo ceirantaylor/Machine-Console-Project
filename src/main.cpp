@@ -4,7 +4,6 @@
 
 int main() 
 {
-    //LED();
-    //Commented out to experiment with building without RaspPi
+    outputValue(getKeypadInput());
     return 0;
 }
